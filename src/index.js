@@ -7,6 +7,7 @@ data.then(item => item.json())
         const divFilm = document.createElement('div');
         container.append(divFilm);
         divFilm.append(result.results[j].title);
+        
         function getShip() {
             const dataNew = fetch('https://swapi.co/api/films/');
             dataNew.then(item => item.json())
